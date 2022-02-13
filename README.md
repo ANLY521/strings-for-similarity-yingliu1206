@@ -11,9 +11,9 @@ Data is from the [STS benchmark](http://ixa2.si.ehu.es/stswiki/index.php/STSbenc
 Describe each metric in ~ 1 sentence
 
 - NIST: evaluates machine translation quality using n-gram co-occurrence statistics. 
-- BLEU: measures the similarity between machine translation and the reference translation based on the number of matching word n-grams. The approach works by counting matching n-grams in the candidate translation to n-grams in the reference text, where 1-gram or unigram would be each token and a bigram comparison would be each word pair. The comparison is made regardless of word order.
+- BLEU: measures the similarity between machine translation and the reference translation based on the number of matching word n-grams. 
 - Word Error Rate: computes the minimum Edit Distance between the human-generated sentence and the machine-predicted sentence.
-- Longest common substring: given two strings, ‘X’ and ‘Y’, find the length of the longest common substring.
+- Longest Common Substring: given two strings, ‘X’ and ‘Y’, find the length of the longest common substring.
 - Edit Distance:
 
 **TODO:** Fill in the correlations. Expected output for DEV is provided; it is ok if your actual result
