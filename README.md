@@ -23,20 +23,20 @@ varies slightly due to preprocessing/system difference, but the difference shoul
 
 Metric | Train | Dev | Test 
 ------ | ----- | --- | ----
-NIST | (fill me) | 0.593 | (fill me)
-BLEU | (fill me) | 0.433 | (fill me)
-WER | (fill me) | -0.452| (fill me)
-LCS | (fill me) | 0.468| (fill me)
-Edit Dist | (fill me) | -0.175| (fill me)
+NIST | 0.493 | 0.593 | 0.464
+BLEU | 0.371 | 0.433 | 0.353
+WER | -0.324 | -0.452| -0.326
+LCS | 0.463 | 0.468| 0.504
+Edit Dist | 0.033 | -0.175| -0.039
 
 **TODO:**
 Show usage of the homework script with command line flags (see example under lab, week 1).
 
-`python sts_person.py --sts_data stsbenchmark/sts-dev.csv`
+`python sts_pearson.py --sts_data stsbenchmark/sts-dev.csv`
 
-`python sts_person.py --sts_data stsbenchmark/sts-train.csv`
+`python sts_pearson.py --sts_data stsbenchmark/sts-train.csv`
 
-`python sts_person.py --sts_data stsbenchmark/sts-test.csv`
+`python sts_pearson.py --sts_data stsbenchmark/sts-test.csv`
 
 
 ## lab, week 1: sts_nist.py
