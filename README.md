@@ -14,7 +14,7 @@ Describe each metric in ~ 1 sentence
 - BLEU: measures the similarity between machine translation and the reference translation based on the number of matching word n-grams. 
 - Word Error Rate: computes the minimum Edit Distance between the human-generated sentence and the machine-predicted sentence.
 - Longest Common Substring: given two strings, ‘X’ and ‘Y’, find the length of the longest common substring.
-- Edit Distance:
+- Edit Distance: The edit distance is the number of characters that need to be substituted, inserted, or deleted, to transform s1 into s2.
 
 **TODO:** Fill in the correlations. Expected output for DEV is provided; it is ok if your actual result
 varies slightly due to preprocessing/system difference, but the difference should be quite small.
