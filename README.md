@@ -33,7 +33,9 @@ Edit Dist | (fill me) | -0.175| (fill me)
 Show usage of the homework script with command line flags (see example under lab, week 1).
 
 `python sts_person.py --sts_data stsbenchmark/sts-dev.csv`
+
 `python sts_person.py --sts_data stsbenchmark/sts-train.csv`
+
 `python sts_person.py --sts_data stsbenchmark/sts-test.csv`
 
 
