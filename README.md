@@ -12,8 +12,8 @@ Describe each metric in ~ 1 sentence
 
 - NIST: to handle the low co-occurrences for larger values of N, an arithmetic mean is used when combining the precisions of n-gram matches. Besides, the n-grams are weighted depending on their frequency in a reference corpus, assuming that high frequency n-grams are less informative. Usually, the standard cumulative 5-gram NIST score is adopted.
 - BLEU: measures the similarity between machine translation and the reference translation based on the number of matching word n-grams. The approach works by counting matching n-grams in the candidate translation to n-grams in the reference text, where 1-gram or unigram would be each token and a bigram comparison would be each word pair. The comparison is made regardless of word order.
-- WER: WER is based on the edit distance defined as the minimum number of word substitutions, deletions, and insertions that need to be performed to convert MT output into the reference translation.
-- LCS: 
+- WER: computes the minimum Edit Distance between the human-generated sentence and the machine-predicted sentence.
+- LCS: given two strings, ‘X’ and ‘Y’, find the length of the longest common substring.
 - Edit Dist:
 
 **TODO:** Fill in the correlations. Expected output for DEV is provided; it is ok if your actual result
