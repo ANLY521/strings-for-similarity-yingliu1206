@@ -53,7 +53,7 @@ def main(sts_data):
         bleu_scores.append(bleu_score)
 
         # calculate Word Error Rate for each text pair
-        wer_score = edit_distance(t1_toks, t2_toks)
+        wer_score = edit_distance(t1_toks, t2_toks)/(len(t1_toks)+len(t2_toks))
 
         wer_scores.append(wer_score)
 
