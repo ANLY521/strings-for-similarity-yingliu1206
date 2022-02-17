@@ -1,5 +1,4 @@
 from scipy.stats import pearsonr
-import jiwer
 import difflib
 from nltk import word_tokenize
 from nltk.translate.nist_score import sentence_nist
@@ -54,13 +53,7 @@ def main(sts_data):
         bleu_scores.append(bleu_score)
 
         # calculate Word Error Rate for each text pair
-        transformation = jiwer.Compose([
-            jiwer.ToLowerCase(),
-            jiwer.RemoveWhiteSpace(replace_by_space=True),
-            jiwer.RemoveMultipleSpaces(),
-            jiwer.ReduceToListOfListOfWords(word_delimiter=" ")
-        ])
-        wer_score = jiwer.wer(t1, t2, truth_transform=transformation, hypothesis_transform=transformation)
+        wer_score = edit_distance(t1_toks, t2_toks)
 
         wer_scores.append(wer_score)
 
